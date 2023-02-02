@@ -1,0 +1,29 @@
+{
+  "name": "node_typescript_template",
+  "version": "1.0.0",
+  "description": "Node.js Typescript template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YeonwooSung/Node_Typescript_Template.git"
+  },
+  "keywords": [
+    "Typescript"
+  ],
+  "author": "YeonwooSung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YeonwooSung/Node_Typescript_Template/issues"
+  },
+  "homepage": "https://github.com/YeonwooSung/Node_Typescript_Template#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
