@@ -21,8 +21,8 @@ export const writeJsonFileSync = (path: string, json: object) => {
 export const writeJsonFileAsync = (path: string, json: object) => {
     // write json to file
     let obj_str:string = JSON.stringify(json, null, 2);
-    fs.writeFile(path, obj_str, (err) => {
-        if (err) throw err;
+    fs.writeFile(path, obj_str, (err: any) => {
+        if (err) console.log(err);
     });
 }
 
