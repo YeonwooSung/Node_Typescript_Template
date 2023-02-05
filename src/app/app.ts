@@ -1,4 +1,5 @@
 import express, {Request, Response, Application} from 'express';
+import Helmet from 'helmet';
 
 const app:Application = express();
 
@@ -6,6 +7,19 @@ const app:Application = express();
 app.get('/', (req: Request, res: Response) => {
     res.send('Express + TypeScript Server');
 });
+
+//----------------------------
+// middlewares
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(Helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
+    crossOriginOpenerPolicy: false,
+    frameguard: false,
+}));
 
 //----------------------------
 // routers
