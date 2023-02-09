@@ -25,7 +25,7 @@ $ npm init
 2. Init typescript config
 
 ```bash
-$ tsc init
+$ tsc --init
 ```
 
 By running `tsc init`, you will get a file "tsconfig.json", which is a config for compiling all typescript files into JS format.
